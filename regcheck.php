@@ -30,8 +30,8 @@
 
             
         
-            echo "Registration Done..!";
-            //header('location:login.html');
+            //echo "Registration Done..!";
+            header('location:login.html');
         }
     }
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 10, 2020 at 09:27 AM
+-- Generation Time: Aug 10, 2020 at 09:34 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.28
 
@@ -41,6 +41,7 @@ CREATE TABLE `userlogin` (
 --
 
 INSERT INTO `userlogin` (`ID`, `Name`, `Email`, `Password`, `Type`) VALUES
+('aacfahim@gmail.com', 'Ashfaq Afzal Chowdhury', 'aacfahim@gmail.com', '123', 'admin'),
 ('abc@gmail.com', 'ABC', 'abc@gmail.com', '123', 'user');
 
 --
