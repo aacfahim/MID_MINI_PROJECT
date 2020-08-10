@@ -1,3 +1,11 @@
+
+<?php
+	session_start();
+
+	if(isset($_COOKIE['STATUS'])){
+		if($_COOKIE['STATUS'] == "OK"){
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +14,8 @@
     <title>Users</title>
 </head>
 <body>
-    <form>
+
+<form>
         <table border=1>
             <h1>USERS </h1>
             <tr>
@@ -15,6 +24,10 @@
                 <td>EMAIL</td>
                 <td>USER TYPE</td>
             </tr>
+                <td><?php echo $_COOKIE["userName"];?> </td> 
+                <td> <?php echo $_COOKIE["name"];?> </td>
+                <td><?php echo $_COOKIE["email"];?></td>
+                <td><?php echo $_COOKIE["userType"];?></td>
 
             <tr>
                 <td></td>
@@ -25,3 +38,17 @@
     
 </body>
 </html>
+
+
+<?php
+
+}else{
+		header('location: login.html');
+		}
+	}else{
+		header('location: login.html?msg=Please Log in');
+	}
+
+
+
+?>

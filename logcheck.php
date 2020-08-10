@@ -35,6 +35,9 @@
 				// storing name and emails from database to cookie
 				setcookie('name', $name, time()+3600, '/');
                 setcookie('email', $email, time()+3600, '/');
+                setcookie('userType', $userType, time()+3600, '/');
+                setcookie('userName', $userName, time()+3600, '/');
+
                 
                // echo $userType;
 

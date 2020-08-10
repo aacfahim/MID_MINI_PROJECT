@@ -1,3 +1,10 @@
+<?php
+	session_start();
+
+	if(isset($_COOKIE['STATUS'])){
+		if($_COOKIE['STATUS'] == "OK"){
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +16,7 @@
     <form>
         <table>
             <h1>Welcome </h1>
+            <?php echo $_COOKIE["name"];?>
             <tr>
                 <td>
                     <a href="userProfile.php">Profile</a>
